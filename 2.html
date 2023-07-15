@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/e6b8371d90.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>ISTE Council</title>
+</head>
+
+
+    <body>
+<section class="campus"><br><br>
+    <h1>ISTE COUNCIL 2023-2024</h1>
+<br>
+<h3>Core Team</h3>
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="Chairperson.jpeg" alt="London Campus">
+            <div class="layer">
+                <h3>Walter White, Chairperson</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="campus-col fade-in">
+            <img src="vcp.jpg" alt="New York Campus">
+            <div class="layer">
+                <h3>Jesse Pinkman, Vice-Chairperson</h3>
+            </div>
+        </div>
+
+        <div class="campus-col fade-in">
+            <img src="Treasurer.jpg" alt="Washington Campus">
+            <div class="layer">
+                <h3>Saul Goodman, Treasurer and Secretary</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="campus">
+    <h3>Operations Team</h3>
+
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="Tuco_BCS.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Tuco Salamanca, Operations Head</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="BCS_S6_Portrait_Lalo.png"
+                alt="Washington Campus">
+            <div class="layer">
+                <h3>Lalo Salamanca, Operations Team</h3>
+            </div>
+        </div>
+        <div class="campus-col fade-in">
+            <img src="Werner_Ziegler.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Werner Ziegler, Operations Team</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="campus">
+    <h3>Web and Tech Team</h3>
+
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="creativehead.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Gustavo Fring, Web and Tech Head</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="eventhead.jpeg" alt="Washington Campus">
+            <div class="layer">
+                <h3>Krazy-8, Web and Tech team</h3>
+            </div>
+        </div>
+        <div class="campus-col fade-in">
+            <img src="Krazy-8.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Mike, Web and Tech team</h3>
+            </div>
+        </div>
+
+    </section>
+    <section class="campus">
+        <h3>Social Media Team</h3>
+
+    </div><div class="row">
+        <div class="campus-col fade-in">
+            <img src="BCS_S3_ChuckMcGill.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Chuck, Social Media Head</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="Howard.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Howard Hamlin, Social Media Team</h3>
+            </div>
+        </div>
+        <div class="campus-col fade-in">
+            <img src="tech head.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Hank, Social Media Team</h3>
+            </div>
+        </div>
+
+    </section>
+    <section class="campus">
+        <h3>PR and Marketing Team</h3>
+
+    </div><div class="row">
+        <div class="campus-col fade-in">
+            <img src="literary.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Kim Wexler, PR and Marketing Head</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="campus-col fade-in">
+            <img src="Cousin1.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Daniel Moncada, PR and Marketing Team</h3>
+            </div>
+        </div>
+        <div class="campus-col fade-in">
+            <img src="Cousin2.png" alt="Washington Campus">
+            <div class="layer">
+                <h3>Luis Moncada, PR and Marketing Team</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+  
+
+  
+<script>
+// JavaScript to add fade-in class to elements when scrolled
+window.addEventListener('scroll', scrollHandler);
+
+function scrollHandler() {
+  const elements = document.querySelectorAll('.fade-in');
+  elements.forEach(element => {
+    if (isElementInViewport(element) && !element.classList.contains('animated')) {
+      element.classList.add('animated'); // Add a class to mark as animated
+    }
+  });
+
+  // Remove the scroll event listener once all elements have been animated
+  if (document.querySelectorAll('.fade-in:not(.animated)').length === 0) {
+    window.removeEventListener('scroll', scrollHandler);
+  }
+}
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom - 100 <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+
+
+
+</script>
+
+
+<!----Footer---->
+<section class="footer">
+<h4>ABOUT US</h4>
+<p>ISTE Student Chapter MH-60
+
+The ISTE Student Chapter(MH 60) was established in 2000-2001 and
+it was inaugrated on Wednesday,24th January 2001 by the Chief
+guest Shri Pratap Borde, Principal MGM's JNCOE, Aurangabad. Shri
+Jayant B. Inamdar Chief Engg., MSRTC, Mumbai was present at the
+function as Guest of Honour. One of the major subject of the
+ISTE is to assist and to contribute the production and
+development of top quality professional engineers and
+technicians needed by the industries and other organisations.As
+ISTE council covers all the fields of engineering all students
+of KJSCE are members of ISTE council.</p>
+
+
+<p>Made with <i class="fa fa-heart" aria-hidden="true"></i> By <a
+    href="https://www.linkedin.com/in/shashankbhanushali/">Shashank
+    Bhanushali</a> for ISTE KJSCE</p>
+</section>
+
+</body>
+
+</html>
